@@ -10,6 +10,7 @@ class ProjectTask(models.Model):
         "product.product", string="Producto", readonly=True
     )
     folder_url = fields.Char(string="Carpeta")
+    task_file = fields.Char(string="Archivo")
     due_date = fields.Date(
         string="Fecha Límite", default=lambda self: self._default_due_date()
     )

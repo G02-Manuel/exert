@@ -8,6 +8,7 @@
                 <group>
                     <field name="related_product_id" readonly="1" />
                     <field name="folder_url" widget="url" />
+                    <field name="task_file" widget="url" />
                 </group>
                 <group>
                     <field name="due_date" />
@@ -15,7 +16,9 @@
                     <field name="end_date" />
                 </group>
                 <gorup>
-                    <field name="executor" widget="many2many_tags"/>
+                    <group>
+                        <field name="executor" widget="many2many_tags"/>
+                    </group>
                 </gorup>
             </xpath>
         </field>
