@@ -1,0 +1,21 @@
+<odoo>
+    <record id="view_task_form_inherit_custom" model="ir.ui.view">
+        <field name="name">project.task.form.inherit.custom</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2" />
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/group" position="inside">
+                <group>
+                    <field name="related_product_id" readonly="1" />
+                    <field name="folder_url" widget="url" />
+                </group>
+                <group>
+                    <field name="due_date" />
+                    <field name="nro_ot" />
+                    <field name="end_date" />
+                </group>
+                <field name="executor"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
