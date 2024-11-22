@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <xpath expr="//sheet/group" position="inside">
                 <group>
-                    <field name="related_product_id" readonly="1" />
+                    <field name="related_product_id" />
                     <field name="folder_url" widget="url" />
                     <field name="task_file" widget="url" />
                 </group>
