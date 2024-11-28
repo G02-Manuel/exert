@@ -14,7 +14,7 @@ class ProjectTask(models.Model):
     due_date = fields.Date(
         string="Fecha Límite", default=lambda self: self._default_due_date()
     )
-    nro_ot = fields.Char(string="Nro OT")
+    nro_ot = fields.Char(string="Nro OT", index=True)
     end_date = fields.Date(string="Fecha de entrega")
     executor = fields.Many2many("hr.employee",
         string="Ejecutor",
