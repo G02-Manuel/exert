@@ -7,7 +7,7 @@ class ProjectTask(models.Model):
 
     # employee_id = fields.Many2one('hr.employee')
     related_product_id = fields.Many2one(
-        "product.product", string="Producto", readonly=True
+        "product.product", string="Producto"
     )
     folder_url = fields.Char(string="Carpeta")
     task_file = fields.Char(string="Archivo")
