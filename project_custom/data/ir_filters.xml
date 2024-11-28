@@ -1,0 +1,12 @@
+<odo>
+    <record id="view_task_search_inherit" model="ir.ui.view">
+        <field name="name">project.task.search.inherit</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_search" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='group_by_stage']" position="before">
+                <filter string="Nro OT" name="filter_nro_ot" domain="[('nro_ot', 'ilike', self)]" />
+            </xpath>
+        </field>
+    </record>
+</odo>
